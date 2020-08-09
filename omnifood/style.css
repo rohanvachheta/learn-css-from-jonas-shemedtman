@@ -1,3 +1,6 @@
+/* ---------------- */
+/* basic setup */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +16,121 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* ----------------------------------------------- */
+/* reusable components */
+/* ----------------------------------------------- */
+
 .row {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* ----------------------------------------------- */
+/* header  */
+/* ----------------------------------------------- */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1450&q=80");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-top: 20px;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  transition: all 0.5s;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  word-spacing: 3px;
+}
+
+.main-nav li a:hover {
+  border-bottom: 2px solid #2980b9;
+  word-spacing: 8px;
+  letter-spacing: 1px;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+/* ----------------------------------------------- */
+/* buttons  */
+/* ----------------------------------------------- */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 200px;
+  transition: all 0.5s;
+}
+
+.btn-full {
+  background-color: #2980b9;
+  border: 1px solid #2980b9;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.btn-ghost {
+  border: 1px solid #2980b9;
+  color: #2980b9;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #1d5a81;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #1d5a81;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  color: #fff;
+  border: 1px solid #1d5a81;
 }
