@@ -38,6 +38,13 @@ body {
 section {
   padding: 80px 0;
 }
+
+.clearfix {
+  content: "";
+  clear: both;
+  overflow: auto;
+}
+
 /* ----------------------------------------------- */
 /* header  */
 /* ----------------------------------------------- */
@@ -239,4 +246,12 @@ h3 {
 
 .section-meals {
   padding: 0;
+}
+
+.section-group ul {
+  list-style: none;
+}
+
+.section-group li{
+  margin-bottom: 20px;
 }
