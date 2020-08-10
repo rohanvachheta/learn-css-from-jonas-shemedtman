@@ -235,7 +235,7 @@ h3 {
   width: 100%;
   transform: scale(1.15);
   transition: all 0.7s;
-  opacity: 0.8;
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -252,6 +252,57 @@ h3 {
   list-style: none;
 }
 
-.section-group li{
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+.section-group li {
   margin-bottom: 20px;
+}
+
+.steps-box {
+  margin-top: 30px;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.work-step {
+  margin-bottom: 50px;
+}
+
+.work-step:last-of-type {
+  margin-bottom: 100px;
+}
+
+.work-step div {
+  color: #2980b9;
+  border: 1px solid #2980b9;
+  display: inline-block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.btn-android img {
+  height: 41px;
+  width: auto;
+  margin-right: 10px;
 }
