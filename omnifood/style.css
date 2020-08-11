@@ -313,12 +313,11 @@ h3 {
   margin-bottom: 15px;
 }
 
-
-.city-feature{
+.city-feature {
   margin-bottom: 5px;
 }
 
-.icon-small{
+.icon-small {
   display: inline-block;
   width: 30px;
   text-align: center;
@@ -328,4 +327,46 @@ h3 {
   vertical-align: middle;
   margin-top: -3px;
   margin-right: 5px;
+}
+
+/* testimonials */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.698), rgba(0, 0, 0, 0.698)),
+    url("https://www.ianposton.com/omnifood/resources/css/img/foodies-background-min.jpg");
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  margin-top: 40px;
+  position: relative;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+blockquote::before{
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -3;
+
+}
+
+cite img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
