@@ -167,16 +167,17 @@ h3 {
 /* ----------------------------------------------- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,input[type=submit] {
   display: inline-block;
   padding: 10px 30px;
   text-decoration: none;
   font-weight: 300;
   border-radius: 200px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
-.btn-full {
+.btn-full,input[type=submit] {
   background-color: #2980b9;
   border: 1px solid #2980b9;
   color: #fff;
@@ -188,13 +189,13 @@ h3 {
   color: #2980b9;
 }
 
-.btn:hover,
+.btn:hover,input[type=submit]:hover,
 .btn:active {
   background-color: #1d5a81;
 }
 
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,input[type=submit]:hover{
   border: 1px solid #1d5a81;
 }
 
@@ -426,4 +427,30 @@ cite img {
 .plan-box ul li{
   padding: 5px 0;
 
+}
+
+
+input[type=checkbox]{
+  margin:10px 7px 10px 0;
+}
+
+.content-form{
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],input[type=email],select,textarea{
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #bbbaba;
+}
+
+textarea{
+  height: 100px;
+}
+
+*:focus{
+  outline: none;
+  border: 1px solid #555;
 }
