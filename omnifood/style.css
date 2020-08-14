@@ -450,7 +450,96 @@ textarea{
   height: 100px;
 }
 
+/* all input focus */
+
 *:focus{
   outline: none;
-  border: 1px solid #555;
+  border: 1px solid rgb(39, 39, 39);
+}
+
+
+/* footer */
+
+
+footer{
+  background-color: rgb(54, 54, 54);
+  padding: 50px;
+  font-size: 80%;
+}
+
+.footer-nav{
+  list-style: none;
+  float: left;
+}
+
+.footer-nav li,
+.social-link li{
+  display: inline-block;
+  margin-right: 20px;
+
+}
+
+.social-link{
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li:last-child,
+.social-link li:last-child{
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:visited,
+.social-link li a:link{
+
+    text-decoration: none;
+    border: 0;
+    color: rgb(173, 173, 173);
+    transition: color 0.7s;
+
+}
+
+.footer-nav li a:hover,.footer-nav li a:active{
+  color: #000000;
+
+}
+
+.social-link li a:link,
+.social-link li a:visited{
+  font-size: 150%;
+}
+
+.buffer,
+.google,
+.linkedin,
+.tumbler{
+  transition: color 0.4s;
+}
+
+.buffer:hover{
+  color: #2980b9;
+}
+
+.google:hover{
+  color: rgb(214, 72, 72);
+}
+
+.linkedin:hover{
+  color: #586e7c;
+}
+
+.tumblr:hover{
+  color: #65a3cc;
+}
+
+
+
+footer p{
+
+  color: rgb(173, 173, 173);
+  text-align: center;
+  margin-top: 50px;
+
 }
