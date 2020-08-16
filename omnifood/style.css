@@ -7,13 +7,15 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   background-color: #fff;
   color: #555;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 /* ----------------------------------------------- */
@@ -69,6 +71,65 @@ header {
   float: right;
   list-style: none;
   margin-top: 55px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1d5a81;
+  color: white;
+  z-index: 2;
+}
+
+h4 {
+  display: none;
+}
+
+.sticky h4 {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon-img {
+  font-size: 200%;
+  background-color: #fff;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  transition: all 0.5s;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  word-spacing: 3px;
+}
+
+.sticky .main-nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sticky .logo {
+  margin-top: 10px;
+  display: none;
+}
+
+.sticky .main-nav li a:hover {
+  border-bottom: 2px solid #fff;
+  word-spacing: 8px;
+  letter-spacing: 1px;
 }
 
 .main-nav li {
@@ -455,10 +516,10 @@ textarea {
 
 /* all input focus */
 
-*:focus {
+/* *:focus {
   outline: none;
   border: 1px solid rgb(39, 39, 39);
-}
+} */
 
 /* footer */
 
