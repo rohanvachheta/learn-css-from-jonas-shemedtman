@@ -17,9 +17,27 @@ section img {
   height: 100%;
 }
 
-h1 {
+p {
+  color: #8a8986;
+  font-weight: bold;
+}
+
+section img:first-child {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
   font-weight: bold;
   color: #282049;
+}
+
+h3,
+h4 {
+  color: #544a69;
+  font-weight: bold;
 }
 
 h5 {
@@ -39,6 +57,10 @@ h5 {
   margin: 0 auto;
 }
 
+.text-danger {
+  color: #d2676c !important;
+}
+
 .text-success,
 a {
   color: #6cb1ac !important;
@@ -47,6 +69,19 @@ a {
 a {
   text-decoration: none;
   font-weight: bold;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+
+.navbar-header li a:hover,
+a:hover {
+  color: #d2676c !important;
+}
+
+button:hover {
 }
 
 .text-secoundary {
@@ -72,4 +107,95 @@ a {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   box-shadow: 0px 2px 2px #999999;
+}
+
+.btn-success:hover {
+  background-color: #d2676c !important;
+  border: #d2676c !important;
+  box-shadow: 0px 2px 2px #4e3535;
+}
+
+.bg-danger {
+  background-color: #feeced !important;
+}
+
+.bg-danger i,
+.bg-danger strong {
+  color: #d2676c;
+}
+
+.bg-success {
+  background-color: #edf8fa !important;
+}
+
+.bg-success i,
+.bg-success strong {
+  color: #97d0ef;
+}
+
+.img {
+  /* margin: 25% 0;
+  display: block;
+  width: 70%;
+  text-align: center; */
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.first-image {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+}
+
+.bg-warning {
+  background-color: #fff0d6 !important;
+}
+
+.bg-warning i,
+.bg-warning strong {
+  color: #f0c384;
+}
+
+.services {
+  margin: 25px 0;
+  padding: 8px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* services */
+
+.services i {
+  display: block;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.introduction {
+  background-color: #fef6e3;
+  margin-top: 80px;
+  padding: 30px;
+  border-radius: 28px;
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  -ms-border-radius: 28px;
+  -o-border-radius: 28px;
+}
+
+.byclecle-img img {
+  margin: 10px;
+  display: block;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
