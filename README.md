@@ -11,3 +11,6 @@
    - inline ,block elements
    - inheritence
    - font css
+   
+- Insta random UI design
+   ![Image of Yaktocat](https://github.com/rohanvachheta/learn-css-from-jonas-shemedtman/blob/master/doorphone/own_makeup.png)
