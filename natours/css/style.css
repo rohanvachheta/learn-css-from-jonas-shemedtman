@@ -96,18 +96,18 @@ body {
   -o-transform: translateY(-1px);
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
   padding: 15px 4rem;
   display: inline-block;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveinbtn 0.5s ease-out 0.65s;
   -webkit-animation: moveinbtn 0.5s ease-out 0.65s;
   animation-fill-mode: backwards;
@@ -131,19 +131,19 @@ body {
 
 /* logobox */
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
 /* text-box */
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -165,7 +165,7 @@ body {
   margin-bottom: 60px;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
   font-size: 60px;
   font-weight: 400;
@@ -176,7 +176,7 @@ body {
   animation-timing-function: ease-in;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
