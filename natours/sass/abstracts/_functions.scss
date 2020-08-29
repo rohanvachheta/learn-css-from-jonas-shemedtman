@@ -1,0 +1,11 @@
+@function countWidth() {
+  @return 78.5%;
+}
+
+@mixin border-radius-10 {
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  -ms-border-radius: 10rem;
+  -o-border-radius: 10rem;
+}
