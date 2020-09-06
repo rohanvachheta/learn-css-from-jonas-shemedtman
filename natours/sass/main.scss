@@ -11,9 +11,6 @@
 @import "./base/utilities";
 @import "./base/animations";
 
-// pages
-@import "./pages/home.scss";
-
 // component
 
 @import "./components/button";
@@ -24,6 +21,9 @@
 @import "./components/card"; // layouts
 @import "./components/form";
 @import "./components/_popup";
+
+// pages
+@import "./pages/home.scss";
 
 @import "./layout/navigation";
 @import "./layout/header";

@@ -9,6 +9,13 @@
   opacity: 0;
   visibility: hidden;
 
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    backdrop-filter: blur(10px);
+    background-color: rgba($color: $color-black, $alpha: 0.2);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
   &:target {
     opacity: 1;
     visibility: visible;
@@ -81,6 +88,83 @@
     &:hover,
     &:active {
       color: $color-primary;
+    }
+  }
+
+  @include respond(tab-port) {
+    background-color: rgba($color: $color-black, $alpha: 0.8);
+
+    &:target {
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.3s;
+    }
+
+    &__content {
+      @include absoluteCenter;
+
+      border-radius: 3px;
+      width: 80%;
+      box-shadow: 0 2rem 4rem rgba($color: $color-black, $alpha: 0.2);
+      display: block;
+      overflow: hidden;
+      transform: translate(-50%, -50%) scale(0.5);
+      transition: all 0.3s 0.2s;
+    }
+
+    &__left {
+      width: 102%;
+      display: block;
+    }
+
+    &__right {
+      width: 100%;
+      display: block;
+      padding: 1rem 3rem;
+    }
+
+    &__img {
+      width: 49%;
+      margin: 0 auto;
+      display: inline-block;
+      border: none;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+
+      column-count: 2;
+      column-gap: 4rem; // 1em =14px
+      column-rule: 1px solid $color-grey-dark-2;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+    }
+
+    &:target &__content {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+      &:link,
+      &:visited {
+        color: $color-grey-dark-3;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 3rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.2s;
+        line-height: 1;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-primary;
+      }
     }
   }
 }
