@@ -18,6 +18,9 @@
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 }
 
+$bp-largest: 75em; //1200;
+$bp-large: 62.5em; //1200;
+
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +35,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem =10px
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {

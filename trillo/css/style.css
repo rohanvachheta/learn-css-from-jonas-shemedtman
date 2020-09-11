@@ -25,6 +25,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Open sans", sans-serif;
@@ -41,6 +44,10 @@ body {
   margin: 8rem auto;
   box-shadow: var(--shadow-dark);
   min-height: 50rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      width: 100%; } }
 
 .header {
   font-size: 1.4rem;
@@ -347,7 +354,8 @@ body {
     .recommand__photo:not(:last-child) {
       margin-right: -1rem; }
     .recommand__photo:hover {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      border: 3px solid transparent; }
 
 .review {
   background-color: #fff;
@@ -396,3 +404,44 @@ body {
     line-height: 1;
     color: var(--color-grey-light-2);
     font-family: sans-serif; }
+
+.cta {
+  padding: 3.5rem;
+  text-align: center; }
+  .cta__book--now {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase; }
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary--dark));
+  color: #fff;
+  position: relative;
+  overflow: hidden; }
+  .btn > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s; }
+  .btn__visible {
+    padding: 2rem 7.5rem; }
+  .btn__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%; }
+  .btn:hover {
+    background-image: linear-gradient(to right, var(--color-primary--dark), var(--color-primary-light)); }
+  .btn:hover .btn__visible {
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    animation: pulsate 1s infinite; }
