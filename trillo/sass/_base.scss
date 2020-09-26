@@ -18,8 +18,11 @@
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 }
 
-$bp-largest: 75em; //1200;
-$bp-large: 62.5em; //1200;
+$bp-largest: 75em; //1200px;
+$bp-large: 62.5em; //1100px
+$bp-medium: 56.75em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
 
 * {
   margin: 0;
